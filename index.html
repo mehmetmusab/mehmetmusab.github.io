@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Menu -->
+    <div class="sticky-menu">
+        <ul>
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="categories.html" target="_blank">Categories</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+        </ul>    
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="myForm" onsubmit="return validateForm()" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <!-- Cities will be populated here -->
+            </select>
+
+            <label for="course">Course Type:</label>
+            <select id="course" name="course" required>
+                <!-- Course types will be populated here -->
+            </select>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Sticky Ad -->
+    <div class="sticky-ad" id="stickyAd">
+        <div class="ad-content">
+            <p>Check out our new courses!</p>
+            <button onclick="closeAd()">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+    <form id="myForm" onsubmit="return validateForm()" method="POST">
+        <!-- Diğer form elemanları buraya gelecek -->
+       
+    </form>
+    
+
+</head>
+<body>
+    

@@ -1,0 +1,173 @@
+/* General page and body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    background-image: url('images/arka-plan.png'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Sticky Menu */
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.sticky-menu ul {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-menu li {
+    margin: 0 20px; /* Space between menu items */
+}
+
+.sticky-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    display: block;
+}
+
+.sticky-menu a:hover {
+    background-color: #575757; /* Hover effect */
+    border-radius: 4px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px; /* Space below the sticky menu */
+}
+
+/* Title */
+.form-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Submit Button */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Sticky Ad */
+.sticky-ad {
+    position: fixed;
+    top: 120px; /* Position the ad below the sticky menu */
+    right: 20px; /* Place the ad on the right */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sticky-ad p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sticky-ad button {
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sticky-ad button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .sticky-menu ul {
+        flex-direction: column; /* Stack the menu items vertically on small screens */
+    }
+
+    .form-container {
+        margin-top: 60px; /* Adjust space for smaller screens */
+        width: 90%;
+    }
+
+    .sticky-ad {
+        width: 200px;
+        top: 90px; /* Adjust ad position for smaller screens */
+    }
+}
+body {
+    background: transparent;  /* Tam şeffaf arka plan */
+}
+@media (max-width: 768px) {
+    /* Menü öğeleri dikey sıralanacak */
+    .sticky-menu ul {
+        flex-direction: column;
+    }
+}
